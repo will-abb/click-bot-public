@@ -1,0 +1,6 @@
+markdown
+pyautogui==0.9.52
+pynput
+tk
+tkhtmlview
+

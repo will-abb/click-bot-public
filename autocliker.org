@@ -1,0 +1,41 @@
+#+title: Autoclicker
+* Click Like A Human
+** logic
+*** random time interval in between clicks
+**** This is dynamic so standard deviation changes
+***** This means time intervals change randomly also
+*** random time click is held down
+**** This is dynamic so standard deviation changes
+***** This means time intervals change randomly also
+*** human fatigue must be implemented
+**** As time goes on, time intervals increase
+**** Implement a "rest period" where clicking rate decreases significantly for a short time and then resumes
+*** mouse movements
+**** disable mouse movement
+***** Specific key enables it again
+**** CANCELLED enable mouse movement
+***** Random small movement of the mouse :optional:
+****** Random time interval
+****** Must come back to initial position eventually
+***** mouse movements trigger events
+****** Send a notification
+****** End the script :optional:
+******* Random small movement must be disabled
+*** script has max timer
+**** Specify in seconds
+*** CANCELLED click patterns
+**** Implement a small random offset for each click location
+*** breaks
+**** Simulate natural breaks where clicking stops for a short period, mimicking a human taking a break
+*** error handling
+**** Implement robust error handling to ensure the script can recover gracefully from unexpected issues
+*** customization
+**** Allow users to customize parameters such as click speed, hold time, and fatigue rate through the GUI or configuration files
+** Packaging
+*** provide a gui
+**** Disable movements
+**** CANCELLED Enable movements
+***** Random small movement option
+***** End script if movement option
+**** Run script for time option
+*** TODO provide as a pip package
